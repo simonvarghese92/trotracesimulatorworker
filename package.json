@@ -1,0 +1,20 @@
+{
+  "name": "trotsimulatorworker",
+  "version": "1.0.0",
+  "description": "Worker that subscribes and stores events of a trot race simulator",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "DB_CONNECTION_STRING=mongodb://localhost:27017/trotracesimulator node app",
+    "docker": "node app"
+  },
+  "author": "Simon Varghese",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mongoose": "^5.12.4"
+  }
+}
